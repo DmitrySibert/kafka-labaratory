@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d7b475-5edf-466b-a456-30c5fd12bf41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publisher/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subscriber1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publisher/src/main/java/com/dsib/web/ProducerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/publisher/src/main/java/com/dsib/web/ProducerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publisher/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/publisher/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publisher/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/publisher/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscriber1/src/main/java/com/dsib/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/subscriber1/src/main/java/com/dsib/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscriber1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/subscriber1/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscriber2/src/main/java/com/dsib/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/subscriber2/src/main/java/com/dsib/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscriber2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/subscriber2/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2UIdR1jYKIRqfijTJhG8weYgu56" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -39,30 +45,142 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/dmitrii/Projects/kafka-simple/subscriber1/src/main/resources",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "terminal"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dmitrii/Projects/kafka-simple/subscriber2/src/main/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/subscriber1/src/main/resources" />
       <recent name="$PROJECT_DIR$/subscriber2/src/main/resources" />
+      <recent name="$PROJECT_DIR$/subscriber1/src/main/resources" />
       <recent name="$PROJECT_DIR$/publisher/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/subscriber/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Compound.All-replication">
+  <component name="RunManager" selected="Compound.10-Publishers">
+    <configuration name="Publisher (10)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8099" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (11)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8100" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (12)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8101" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (13)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8102" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (14)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8103" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (1)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8090" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (2)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8091" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (3)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8092" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (4)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8093" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (5)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8094" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (6)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8095" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (7)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8096" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (8)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8097" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Publisher (9)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
+      <module name="publisher" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8098" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Publisher" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.dsib.PublisherMain" />
       <module name="publisher" />
@@ -74,6 +192,14 @@
       <option name="MAIN_CLASS_NAME" value="com.dsib.SubscriberMain" />
       <module name="subscriber1" />
       <option name="VM_PARAMETERS" value="-Dspring.profiles.active=consumer-group" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Subscriber1-load" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.SubscriberMain" />
+      <module name="subscriber1" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=load" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,6 +228,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Subscriber2-load" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.dsib.SubscriberMain" />
+      <module name="subscriber2" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=load" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Subscriber2-partition" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.dsib.SubscriberMain" />
       <module name="subscriber2" />
@@ -109,6 +243,54 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="10-Publishers-2-sub" type="CompoundRunConfigurationType">
+      <toRun name="Publisher (1)" type="Application" />
+      <toRun name="Publisher (10)" type="Application" />
+      <toRun name="Publisher (2)" type="Application" />
+      <toRun name="Publisher (3)" type="Application" />
+      <toRun name="Publisher (4)" type="Application" />
+      <toRun name="Publisher (5)" type="Application" />
+      <toRun name="Publisher (6)" type="Application" />
+      <toRun name="Publisher (7)" type="Application" />
+      <toRun name="Publisher (8)" type="Application" />
+      <toRun name="Publisher (9)" type="Application" />
+      <toRun name="Subscriber1-load" type="Application" />
+      <toRun name="Subscriber2-load" type="Application" />
+      <method v="2" />
+    </configuration>
+    <configuration name="10-Publishers" type="CompoundRunConfigurationType">
+      <toRun name="Publisher (1)" type="Application" />
+      <toRun name="Publisher (10)" type="Application" />
+      <toRun name="Publisher (2)" type="Application" />
+      <toRun name="Publisher (3)" type="Application" />
+      <toRun name="Publisher (4)" type="Application" />
+      <toRun name="Publisher (5)" type="Application" />
+      <toRun name="Publisher (6)" type="Application" />
+      <toRun name="Publisher (7)" type="Application" />
+      <toRun name="Publisher (8)" type="Application" />
+      <toRun name="Publisher (9)" type="Application" />
+      <toRun name="Subscriber1-load" type="Application" />
+      <method v="2" />
+    </configuration>
+    <configuration name="14-Publishers-2-sub" type="CompoundRunConfigurationType">
+      <toRun name="Publisher (1)" type="Application" />
+      <toRun name="Publisher (10)" type="Application" />
+      <toRun name="Publisher (11)" type="Application" />
+      <toRun name="Publisher (12)" type="Application" />
+      <toRun name="Publisher (13)" type="Application" />
+      <toRun name="Publisher (14)" type="Application" />
+      <toRun name="Publisher (2)" type="Application" />
+      <toRun name="Publisher (3)" type="Application" />
+      <toRun name="Publisher (4)" type="Application" />
+      <toRun name="Publisher (5)" type="Application" />
+      <toRun name="Publisher (6)" type="Application" />
+      <toRun name="Publisher (7)" type="Application" />
+      <toRun name="Publisher (8)" type="Application" />
+      <toRun name="Publisher (9)" type="Application" />
+      <toRun name="Subscriber1-load" type="Application" />
+      <toRun name="Subscriber2-load" type="Application" />
+      <method v="2" />
     </configuration>
     <configuration name="All-group" type="CompoundRunConfigurationType">
       <toRun name="Publisher" type="Application" />
@@ -127,13 +309,39 @@
       <toRun name="Subscriber1-replication" type="Application" />
       <method v="2" />
     </configuration>
+    <configuration name="Load" type="CompoundRunConfigurationType">
+      <toRun name="Publisher" type="Application" />
+      <toRun name="Subscriber1-load" type="Application" />
+      <toRun name="Subscriber2-load" type="Application" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Publisher" />
-      <item itemvalue="Application.Subscriber1-partition" />
+      <item itemvalue="Application.Publisher (1)" />
+      <item itemvalue="Application.Publisher (2)" />
+      <item itemvalue="Application.Publisher (3)" />
+      <item itemvalue="Application.Publisher (4)" />
+      <item itemvalue="Application.Publisher (5)" />
+      <item itemvalue="Application.Publisher (6)" />
+      <item itemvalue="Application.Publisher (7)" />
+      <item itemvalue="Application.Publisher (8)" />
+      <item itemvalue="Application.Publisher (9)" />
+      <item itemvalue="Application.Publisher (10)" />
+      <item itemvalue="Application.Publisher (11)" />
+      <item itemvalue="Application.Publisher (12)" />
+      <item itemvalue="Application.Publisher (13)" />
+      <item itemvalue="Application.Publisher (14)" />
       <item itemvalue="Application.Subscriber1-replication" />
+      <item itemvalue="Application.Subscriber1-partition" />
+      <item itemvalue="Application.Subscriber1-load" />
       <item itemvalue="Application.Subscriber1-group" />
       <item itemvalue="Application.Subscriber2-partition" />
+      <item itemvalue="Application.Subscriber2-load" />
       <item itemvalue="Application.Subscriber2-group" />
+      <item itemvalue="Compound.Load" />
+      <item itemvalue="Compound.10-Publishers" />
+      <item itemvalue="Compound.10-Publishers-2-sub" />
+      <item itemvalue="Compound.14-Publishers-2-sub" />
       <item itemvalue="Compound.All-partition" />
       <item itemvalue="Compound.All-replication" />
       <item itemvalue="Compound.All-group" />

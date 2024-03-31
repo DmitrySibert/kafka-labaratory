@@ -28,6 +28,8 @@ public class KafkaConsumerConfig {
   @Value(value = "${spring.kafka.topic}")
   private String topic;
 
+  private volatile int counter = 0;
+
   @Bean
   public ConsumerFactory<String, String> consumerFactory() {
     Map<String, Object> props = new HashMap<>();
@@ -48,6 +50,16 @@ public class KafkaConsumerConfig {
 
   @Bean
   public ConcurrentKafkaListenerContainerFactory<String, String> kafkaListenerContainerFactory() {
+    new Thread(() -> {
+      while (true) {
+        try {
+          Thread.sleep(3000);
+        } catch (InterruptedException e) {
+          throw new RuntimeException(e);
+        }
+        log.info("Messages: {}", counter);
+      }
+    }).start();
     ConcurrentKafkaListenerContainerFactory<String, String> factory =
       new ConcurrentKafkaListenerContainerFactory<>();
     factory.setConcurrency(1);
@@ -57,7 +69,8 @@ public class KafkaConsumerConfig {
   }
 
   private final MessageListener<String, String> handler = record -> {
-    log.info("Received thread = {}, msg = {}", Thread.currentThread().getName(), record.value());
+    ++counter;
+//    log.info("Received thread = {}, msg = {}", Thread.currentThread().getName(), record.value());
   };
   private void createListeners(ConcurrentKafkaListenerContainerFactory<String, String> factory) {
     ConcurrentMessageListenerContainer<String, String> container = factory.createContainer(topic);
